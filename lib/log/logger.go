@@ -1,6 +1,6 @@
 package log
 import (
-    "os"
+    
     "github.com/s84662355/goLogger"
     "go.uber.org/zap"
 )
@@ -11,7 +11,7 @@ type logger struct{
    log *zap.Logger
 }
 
-func (l *logger) Init(path string isDay bool){
+func (l *logger) Init(path string,isDay bool){
      l.log = goLogger.Logger(path,isDay)
 }
 

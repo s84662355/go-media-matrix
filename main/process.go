@@ -6,12 +6,19 @@ import (
     "media-matrix/process"
     "media-matrix/config"
     "media-matrix/lib/mysql"
+  ///  "media-matrix/lib/helper"
+  ///  "fmt"
+     "media-matrix/lib/log"
      
 )
 
 
 func init(){
-    
+     log.Logger.Init("log/process",true)
+
+/// str , _ :=  os.Getwd()
+ 
+
 }
 
 func main() {
@@ -21,7 +28,7 @@ func main() {
     mysql.ConnectMysql(config.MySQL ,"default")
     
  
-   
+   log.Logger.Info("384954398589")
     process.Register.Start()
    //  process.test()
 

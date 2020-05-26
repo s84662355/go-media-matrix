@@ -5,6 +5,8 @@ import (
 	"math/rand"
 	"net"
 	"fmt"
+	///"strings"
+ 
 )
 func  GetRandomString(l int) string {
 	str := "0123456789abcdefghijklmnopqrstuvwxyz"
@@ -39,3 +41,7 @@ func Recover() {
         fmt.Println(err)
     }
 }
+
+
+
+ 
